@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Input with Submit Button</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(203, 225, 203);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgb(197, 236, 27);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        label {
+            color: white;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"] {
+            width: 400px; /* Updated width to 400px */
+            height: 100px; /* Updated height to 100px */
+            padding: 5px;
+            font-size: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        input[type="submit"] {
+            width: 120px;
+            height: 40px;
+            font-size: 24px;
+            background-color: #fff;
+            color: blue;
+            border: 1px solid rgb(197, 236, 27);
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: rgb(197, 236, 27);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action= "/submit" method='post'>
+            <label for="text_input">Input your text Message:</label>
+            <input type="text" id="text_input" name="text_input" placeholder="Type your text here">
+  <input type="submit" value="Submit">
+</form> 
+
+</p>
+
+</body>
+</html>
